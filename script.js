@@ -68,7 +68,7 @@ function displayExpenses() {
     } else {
         expenses.forEach(expense => {
             const li = document.createElement('li');
-            li.textContent = `Category: ${expense.category} | Amount: $${expense.amount}`;
+            li.textContent = `Category: ${expense.category} | Amount: ₹${expense.amount}`;
             expensesContainer.appendChild(li);
         });
     }
